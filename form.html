@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="content">
+    <h1>JS Validation form</h1>
+<div class="container">
+
+        <div class = "left">
+            <form id="form" class="form">
+                <ul>
+                <li>
+                <input type="text" id="fname" name="fname" placeholder="First Name" onfocusout="validateFirstName()">
+                <span class="empty-msg display-none">First name is required</span>
+                <span class="error-msg display-none">First name can only contain letters</span>
+
+                <input type="text" id="mname" name="mname" placeholder="Middle Name">
+                
+                <input type="text" id="lname" name="lname" placeholder="Last Name" onfocusout="validateLastName()" ><br />
+                <span class="error-msg display-none">Last name is required</span>
+                <span class="error-msg display-none">Last name can only contain letters</span>
+                </li>
+
+                <li>
+                <input type="email" id="email" name="email" placeholder="Your email" >
+                <span class="error-msg display-none">Email is required</span>
+                </li>
+                <li>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone" >
+                <span class="error-msg display-none">Phone is required</span>
+                </li>
+                
+                <li>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                </li>
+
+                <li>
+                <input type="checkbox" name="vehicle" value="bike"> Bike
+                <input type="checkbox" name="vehicle" value="car">Car
+                <input type="checkbox" name="vehicle" value="cycle">Cycle
+                </li>
+
+                <li>
+                <select name="state" id="states" onclick="myCity()">
+                <option>Select State</option>
+                </select> 
+                <select name="city" id="cities">
+                <option>Select City</option>
+                </select> 
+                </li>   
+                <li>Date of joining 
+                    <input type="date" id="joining" name="joining">
+                </li>
+                <li>
+                    <button type="button" id="displayDate" onclick="return date()">Get date of Joining</button>
+                </li>
+ 
+
+                <li>  
+                    <input type="button" id="submit" name="submit" value="Submit" onclick="submitForm()">
+                </li>
+                </ul>
+            
+                <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+                        <span class="closeBtn" onclick="return closeModal()">&times;</span>
+                        <p>Thank you!</p> 
+                        <p>Your form has been received.</p>
+                    </div>
+                </div>
+            </form>    
+        </div>
+        <div class = "right">
+            <p>Form Data</p>
+        </div>
+
+
+</div>
+</div>
+    <script src="form.js"></script>
+
+</body>
+
+
