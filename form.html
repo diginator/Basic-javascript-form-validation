@@ -11,23 +11,16 @@
                 <ul>
                 <li>
                 <input type="text" id="fname" name="fname" placeholder="First Name" onfocusout="validateFirstName()">
-                <span class="empty-msg display-none">First name is required</span>
-                <span class="error-msg display-none">First name can only contain letters</span>
-
                 <input type="text" id="mname" name="mname" placeholder="Middle Name">
-                
-                <input type="text" id="lname" name="lname" placeholder="Last Name" onfocusout="validateLastName()" ><br />
-                <span class="error-msg display-none">Last name is required</span>
-                <span class="error-msg display-none">Last name can only contain letters</span>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" onfocusout="validateLastName()" >
                 </li>
 
                 <li>
                 <input type="email" id="email" name="email" placeholder="Your email" >
-                <span class="error-msg display-none">Email is required</span>
                 </li>
+                    
                 <li>
                 <input type="tel" id="phone" name="phone" placeholder="Your phone" >
-                <span class="error-msg display-none">Phone is required</span>
                 </li>
                 
                 <li>
@@ -49,14 +42,7 @@
                 <option>Select City</option>
                 </select> 
                 </li>   
-                <li>Date of joining 
-                    <input type="date" id="joining" name="joining">
-                </li>
-                <li>
-                    <button type="button" id="displayDate" onclick="return date()">Get date of Joining</button>
-                </li>
- 
-
+           
                 <li>  
                     <input type="button" id="submit" name="submit" value="Submit" onclick="submitForm()">
                 </li>
