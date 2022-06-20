@@ -45,10 +45,6 @@ function validation() {
 
     select.innerHTML = options; 
 
-function newFunction() {
-    return '#form input';
-}
-
 function myCity() {
     var selectedState = document.getElementById("states").value;
     var selectedCity = document.getElementById("cities");
