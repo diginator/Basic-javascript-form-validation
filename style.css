@@ -97,13 +97,6 @@ background-color: rgba(0,0,0,0.5);
     text-decoration: none;
 }
 
-.empty-msg{
-    white-space: nowrap;
-}
-
-.error-msg{
-    white-space: nowrap;
-}
 
 .display-none {
     display: none;
@@ -111,12 +104,4 @@ background-color: rgba(0,0,0,0.5);
 
 .display-block {
     display: block;
-}
-
-.input-error {
-    border: 2px solid red;
-}
-
-.input-valid {
-    border: 2px solid green;
 }
