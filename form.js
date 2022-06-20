@@ -8,7 +8,7 @@ const vehicle = document.getElementsByName("vehicle");
 
 
 function validation() {
-    if (firstName == "" || middleName == "" || lastName ==""  || !firstName.match(/[a-zA-Z]/) || !middleName.match(/[a-zA-Z]/) || !lastName.match(/[a-zA-Z]/))
+    if (firstName == "" || middleName == "" || lastName == ""  || !firstName.match(/[a-zA-Z]/) || !middleName.match(/[a-zA-Z]/) || !lastName.match(/[a-zA-Z]/))
     {
        alert("Please fill a valid name")
        return false;
