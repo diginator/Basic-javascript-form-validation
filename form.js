@@ -1,16 +1,11 @@
-
-const submit = document.getElementById("submit");
-//submit.disabled = true;
-const firstName = document.getElementById('fname');
+const firstName = document.getElementById('fname').value;
 const middleName = document.getElementById('mname').value;
-const lastName = document.getElementById('lname');
+const lastName = document.getElementById('lname').value;
 const email = document.getElementById('email').value;
 const phone = document.getElementById('phone').value;
 const gender = document.getElementsByName("gender");
 const vehicle = document.getElementsByName("vehicle");
-const form = document.getElementById("form");
-const emptySpan = document.getElementsByClassName('empty-msg')[0];
-const errorSpan = document.getElementsByClassName('error-msg')[0];
+
 
 function validation() {
     if (firstName == "" || middleName == "" || lastName ==""  || !firstName.match(/[a-zA-Z]/) || !middleName.match(/[a-zA-Z]/) || !lastName.match(/[a-zA-Z]/))
@@ -34,40 +29,9 @@ function validation() {
     }  
     else { 
        alert("Proceed");
-       submit.disabled = false;
        return true;
     };
         
-};
-
-function validateFirstName() {
-    if (firstName.value == "") {
-        firstName.classList.add("input-error");
-        emptySpan.classList.remove("display-none");
-    }
-    else if (!firstName.value.match(/[a-zA-Z]/)) {
-        firstName.classList.add("input-error");
-        errorSpan.classList.remove("display-none");
-    }
-    else {
-        firstName.classList.add("input-valid");
-        errorSpan.classList.add("display-none");
-    }
-};
-
-function validateLastName() {
-    if (lastName.value == "") {
-        lastName.classList.add("input-error");
-        emptySpan.classList.remove("display-none");
-    }
-    else if (!lastName.value.match(/[a-zA-Z]/)) {
-        lastName.classList.add("input-error");
-        errorSpan.classList.remove("display-none");
-    }
-    else {
-        last.classList.add("input-valid");
-        errorSpan.classList.add("display-none");
-    };
 };
 
 
@@ -111,13 +75,6 @@ function myCity() {
 
 
 
-function date() {
-    var display = document.getElementById("joining").value;
-    document.getElementById("displayDate").innerHTML = display;
-  }
-
-
-
 //Get modal element
 var modal = document.getElementById("simpleModal");
 var closeBtn = document.getElementsByClassName("closeBtn")[0];
@@ -151,29 +108,3 @@ function submitForm() {
     };
 
 };
-
-
-function checkForm() {
-    if (validation()) {
-        submit.disabled = false;
-    } 
-}
-
-
-// const inputs = document.querySelectorAll('input');    
-// const allInputs = {};
-    
-//     for (var i = 0; i < inputs.length; i++) {
-//       allInputs = inputs[i].value;
-//     };
-//     console.log(allInputs);
-
-
-// const isRequired = value;
-//     if(value === ''){
-//     return false;
-//     }
-//     else {
-//     return true;
-//     };
-
